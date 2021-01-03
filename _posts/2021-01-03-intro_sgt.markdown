@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "An Introduction to Spectral Graph Thery"
+date:   2021-01-03 
+categories: sgt
+---
+
+Let $$G = \{V, E, W\}$$ be a graph with weighted edges. 
+
+![Graph](/assets/images/laplacian/graph-labels.png)
+
+For any graph we can define associated matrices:
+ * The degree matrix $$D$$ where $$D_{ii} = deg(i)$$
+ * The adjacency matrix $$A$$ where $$A_{ij} = W(i,j)$$
+
+$$D = \begin{pmatrix}2  & 0&0 &0 &0 &0\\
+    0  & 3&0 &0 &0 &0\\
+    0  & 0&2 &0 &0 &0\\
+    0  & 0&0 &3 &0 &0\\
+    0  & 0&0 &0 &3 &0\\
+    0  & 0&0 &0 &0 &1\\\end{pmatrix},\ A = \begin{pmatrix}0  & 1&0 &0 &1 &0\\
+    1  & 0&1 &0 &1 &0\\
+    0  & 1&0 &1 &0 &0\\
+    0  & 0&1 &0 &1 &1\\
+    1  & 1&0 &1 &0 &0\\
+    0  & 0&0 &1 &0 &0\\\end{pmatrix}$$
+
+
+From these matrices we can define the Graph Laplacian as $$L= D-A$$    
+
+$$L = \begin{pmatrix}2  & -1&0 &0 &-1 &0\\
+    -1  & 3&-1 &0 &-1 &0\\
+    0  & -1&2 &-1 &0 &0\\
+    0  & 0&-1 &3 &-1 &-1\\
+    -1  & -1&0 &-1 &3 &0\\
+    0  & 0&0 &-1 &0 &1\\\end{pmatrix}$$
+
+Can we learn about the graph from the laplacian?
+
+Consider $$L$$ as a linear transformation. Looking at the $$i^{th}$$ component of the resultant vector:
+$$(Lx)_i = \sum_{i,j} w_{ij} (x_i - x_j)$$ 
+
+If $$u$$ is an eigenvector with eigenvalue $$\lambda$$ then 
+
+$$(Lu)_i = \sum_{i,j} w_{ij} (u_i - u_j) = \lambda u_i $$
+How to interpret? 
+
+ * Smaller eigenvalues mean that $$u_i \approx u_j$$, with more similarity for larger $$w_{ij}$$. For example the smallest eigenvalue is 0 when $$u_i=u_j$$ for all $$i,j$$ (the constant vector)
+ * For large eigenvalues $$u$$ will be such that $$u_i$$ and $$u_j$$ are opposite in sign to maximize the difference. 
+
+So what does this mean?
+ * The eigenvectors between the constant vector and the oscillating one are a mixture. 
+ * Oscillations start to happen between larger components of the graph and then get smaller until it oscillates practically every other vertex 
+ * This gives us a method to find similar structures in the graph
+
+All the eigenvectors for the graph shown earlier:
+![Graph](/assets/images/laplacian/eigenvectors.png)
