@@ -3,8 +3,10 @@ title: About
 layout: default
 ---
 
-![Picture of me](/assets/me.jpg)
+![Picture of me](/assets/me.jpeg){: width="200" }
 
-I am a Math PhD student at Tufts University right outside of Boston. My research interests are (in no particular order): anomaly detection, graph theory, algorithms, optimal transport, signal and image processing, and many more
+I am a Math PhD student at Tufts University right outside of Boston. My research interests are (in no particular order): anomaly detection, graph theory, algorithms, signal and image processing, and many more
 
-Besides math I enjoy reading, writing, sailing, biking, hiking, Neapolitan pizza, 
+I also enjoy learning about what makes organizations so effective
+
+Some hobbies of mine: reading, writing, sailing, biking, hiking, Neapolitan pizza 

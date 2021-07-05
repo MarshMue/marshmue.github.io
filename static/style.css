@@ -12,8 +12,6 @@ body {
   }
   
 .menu {
-    display: flex;
-    justify-content: flex-end;
     margin-top: 30px;
     margin-right: 20px;
     font-family: "Helvetica Neue", Helvetica;
@@ -30,20 +28,10 @@ body {
     color: #0864c7;
   }
 
-.left {
-    height: 1px;
-    float: left;
-    display: block;
-    min-width: 0;
-    overflow: hidden;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-  }
-
 #content {
+    margin-top: 20px;
     float: left;
-    width: 500px;
+    max-width: 1000px;
     height: auto;
     padding:5px;
 }
@@ -65,5 +53,7 @@ body {
 .row {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
     flex-grow: 1;
 }
