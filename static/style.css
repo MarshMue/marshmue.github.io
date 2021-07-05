@@ -1,20 +1,22 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     font-family: Helvetica;
     font-size: 13px;
+    margin: 0;
+    height: 100%;
   }
-
-@media (min-width: 600px) {
-    .menu{
-        font-size: 4rem;
-    }
-}
   
 .menu {
     display: flex;
     justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 20px;
     font-family: "Helvetica Neue", Helvetica;
-    
-    font-size: 5rem;
   }
 
 .menu ul {
@@ -27,3 +29,41 @@ body {
     display: inline-block;
     color: #0864c7;
   }
+
+.left {
+    height: 1px;
+    float: left;
+    display: block;
+    min-width: 0;
+    overflow: hidden;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+  }
+
+#content {
+    float: left;
+    width: 500px;
+    height: auto;
+    padding:5px;
+}
+
+#subline {
+    margin:0 auto;
+    position: relative;
+    bottom: 8px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
