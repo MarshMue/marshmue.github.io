@@ -1,0 +1,26 @@
+body {
+  font-family: Helvetica;
+}
+
+.layer {
+  font-family: Helvetica;
+  border-style: solid;
+}
+
+/* Style the "Add" button */
+.fitBtn {
+  padding: 10px;
+  width: 50px;
+  background: #d9d9d9;
+  color: #555;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.container {
+  max-width: 20em;
+}
