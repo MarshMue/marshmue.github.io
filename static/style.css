@@ -70,15 +70,31 @@ body {
   flex-wrap: wrap-reverse;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 3) {
     /* styles for phones */
     body {
-      font-size: 20px;
+      font-size: 40px;
     }
     .menu {
       margin-top: 10px;
       margin-right: 0;
-      text-align: center;
+      text-align: left;
+  }
+  #content {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2) {
+    /* styles for phones */
+    body {
+      font-size: 30px;
+    }
+    .menu {
+      margin-top: 10px;
+      margin-right: 0;
+      text-align: left;
   }
   #content {
       max-width: 100%;
