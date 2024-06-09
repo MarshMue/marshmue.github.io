@@ -1,76 +1,178 @@
+:root {
+    --border-lines: #41301d;
+    --horizontal-bar-height: 20px; /* Height of each horizontal bar */
+   --horizontal-bar-spacing: 70vw; /* Space between horizontal bars */
+   --main-text: #302315;
+   --header-height: 40px;
+  }
+
+p {
+line-height: 1.7;
+}
+
+@font-face {
+    font-family: 'Wix Madefor Text';
+    src: url('/static/WixMadeforText-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Variable font weight range */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Wix Madefor Text';
+    src: url('/static/WixMadeforText-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Variable font weight range */
+    font-style: italic;
+  }
+
+  
+  @font-face {
+    font-family: 'Manrope';
+    src: url('Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Variable font weight range */
+    font-style: normal;
+  }
+  
+
 html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Overall Page Background */
+  body {
+    font-family: "Helvetica";
+    font-size: 16px;
+    margin: 0;
+    height: 100%;
+    background-color: #fefefe; /* Light off-white gray */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    color: var(--main-text);
+  }
+  
+  /* Center the Name in the Header */
+  header {
+    font-family: "Wix Madefor Text";
+    background-color: var(--border-lines); /* Traditional Japanese shrine red */
+    text-align: center;
+    padding: 5px 0; /* Reduce padding for a slimmer top bar */
+    height: var(--header-height); /* Set a fixed height if needed */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    position: relative; /* Allow absolute positioning of menu */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    margin-top: 20px;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
+    z-index: 1;
+  }
+  
+  /* Centered Title Styling */
+  .site-title {
+    font-size: 24px; /* Adjust the font size if needed */
+    font-weight: bold; /* Make the title bold */
+    color: white;
+    text-decoration: none;
+    margin: 0; /* Remove any margin */
+    position: relative; /* Position relatively to adjust alignment */
+    left: 0; /* Reset any positioning */
+    transform: none; /* Reset transformation */
+  }
+  
+  /* Menu Styling */
+  .menu {
+    font-family: "Wix Madefor Text";
+    position: absolute; /* Position menu absolutely within the header */
+    right: 8%; /* Align the menu to the right side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Correct vertical alignment */
+    margin-top: 0; /* Remove top margin */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  
+  .menu li {
+    display: inline;
+    margin-right: 15px; /* Add space between menu items */
+  }
+  
+  .menu li a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px; /* Adjust font size for menu links */
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline; /* Add hover effect */
+  }
 
-body {
-  font-family: "Latin Modern Roman";
-  font-size: 16px;
-  margin: 0;
-  height: 100%;
-}
-
-.menu {
-  margin-top: 30px;
-  margin-right: 20px;
-  font-family: "Latin Modern Roman";
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li a {
-  display: inline-block;
-  color: #0864c7;
-}
-
-#content {
-  margin-top: 20px;
-  float: left;
-  max-width: 600px;
-  padding: 5px;
-  margin-right: 10px;
-}
-
-#contentbox {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-#subline {
-  display: flex;
-  margin: 0 auto;
-  padding-top: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-#footer {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: wrap-reverse;
-}
-
-@media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 3) {
+  
+  /* Main Content with Grid Effect */
+.main-content {
+    font-family: "Wix Madefor Text", "Helvetica";
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    min-height: 100vh; /* Minimum height is the full viewport height */
+    box-sizing: border-box; /* Include padding and border in the height */
+    flex-direction: column; /* Allow content to grow vertically */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent var(--horizontal-bar-spacing),
+      var(--border-lines) var(--horizontal-bar-spacing),
+      var(--border-lines) calc(var(--horizontal-bar-spacing) + var(--horizontal-bar-height))
+    );
+    z-index: 1;
+  }
+  
+  /* Adjust Content Box to Grow with Content */
+  #contentbox {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column; /* Ensure the content box can grow vertically */
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fffdf9; /* Light off-white tan */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin: 20px auto; /* Center the content box horizontally and add vertical margins */
+    border-radius: 10px; /* Optional: Add rounded corners for a softer look */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+  }
+  
+  /* Ensure the vertical lines are visible on all screen sizes */
+  .vertical-line {
+    width: var(--horizontal-bar-height);
+    background-color: var(--border-lines); /* Matching shrine red */
+    position: absolute;
+    top: 0;
+    bottom: 0; /* Ensure the line stretches to the bottom of the container */
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); Shading effect from upper left */
+    z-index: -1;
+  }
+  
+  .vertical-line.left {
+    left: 7%; /* Align to the very left of the viewport */
+  }
+  
+  .vertical-line.right {
+    right: 7%; /* Align to the very right of the viewport */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 3) {
     /* styles for phones */
     body {
       font-size: 40px;
@@ -79,57 +181,107 @@ body {
       margin-top: 10px;
       margin-right: 0;
       text-align: left;
-  }
-  #content {
+    }
+    #content {
       max-width: 100%;
       margin-right: 0;
     }
   }
-
+  
   @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2) {
-    /* styles for phones */
-    body {
-      font-size: 30px;
-    }
-    .menu {
-      margin-top: 10px;
-      margin-right: 0;
-      text-align: left;
+    /* Adjust header and title for mobile */
+  header {
+    height: auto; /* Allow the header to expand based on its content */
+    padding: 10px 0; /* Reduce padding to bring the title closer to the top */
+    display: flex;
+    flex-direction: column; /* Stack title and menu vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align items to the top */
   }
-  #content {
+
+  .site-title {
+    margin-bottom: 10px; /* Add some space below the title */
+  }
+
+  /* Adjust menu for mobile */
+  .menu {
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Reset any transform */
+    margin-top: 0; /* Remove top margin */
+    text-align: center; /* Center menu items horizontally */
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center; /* Center menu items */
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    margin: 5px 0; /* Space out menu items vertically */
+  }
+
+  .menu li a {
+    font-size: 18px; /* Adjust font size for readability */
+  }
+    #content {
       max-width: 100%;
       margin-right: 0;
+      padding: 20px; /* Add padding to make room for vertical lines */
     }
+  
+    #contentbox {
+      position: relative; /* Ensure positioning relative to the new lines */
+      padding: 20px; /* Equal padding on all sides */
+      margin: 20px auto; /* Margin on the sides to keep within viewport */
+      width: auto; /* Allow width to be flexible */
+    }
+  
   }
- 
-  .rounded-image {
-    border-radius: 10px; /* Adjust the value to control the roundness */
+
+  .framed-image-container {
+    display: inline-block; /* Ensure the container does not expand */
+    margin: 20px auto; /* Center the image and add vertical margins */
+    border-radius: 15px; /* Ensure the container matches the rounded corners */
+    overflow: hidden; /* Clip the image and shadow to maintain rounded corners */
+    text-align: center;
+  }
+  
+  .framed-image {
+    /* border-radius: 10px; Adjust the value to control the roundness */
+    /* align-self: right; */
+    display: block; /* Make sure the image behaves as a block element */
+    max-width: 100%; /* Ensure the image is responsive */
+    padding: 20px; /* Add space between the image and the border */
+    border: 5px solid var(--border-lines); /* Red border, adjust color as needed */
+    border-radius: 2px; 
+    background-color: #fff; /* Background color for the frame */
+    margin: 20px auto; 
   }
 
-  @font-face {
-    font-family: 'Latin Modern Roman';
-    src: url('./fonts/lmroman10-regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
+  /* Apply rounded corners directly to the image */
+.framed-image img {
+    border-radius: 2px; /* Round the image corners */
+    display: block;
+    max-width: 100%; /* Ensure the image does not overflow */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  
+  .spaced-list li {
+    margin-bottom: 15px; /* Adjust the value to your preferred spacing */
+  }
+  
+  /* Hide the content box on the home page */
+  body.home #contentbox {
+    display: none;
+  }
+  
 
-@font-face {
-    font-family: 'Latin Modern Roman';
-    src: url('./fonts/lmroman10-italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Latin Modern Roman';
-    src: url('./fonts/lmroman10-bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Latin Modern Roman';
-    src: url('./fonts/lmroman10-bolditalic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-}
+  .blog ul a {
+    color:var(--main-text);
+  }

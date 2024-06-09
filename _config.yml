@@ -1,1 +1,6 @@
 name: Marshall Mueller
+collections:
+  writing:
+    output: true
+  bookshelf:
+    output: true

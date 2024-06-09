@@ -2,10 +2,11 @@
 layout: default
 ---
 <h2>{{page.title}}</h2>
+{% if page.date %}
+  <h3>{{ page.date | date: "%Y %m %d" }}</h3>
+{% endif %}
 {{content}}
 
 
-<div id="footer">
-    <div id="subline">As always, feel free to&nbsp;<a href="mailto:marshall.mueller@tufts.edu">share any feedback</a></div>
-</div>
+
 
