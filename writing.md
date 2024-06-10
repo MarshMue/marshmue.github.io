@@ -5,13 +5,16 @@ title: Writing
 
 <h1>Writing</h1>
 
+This is a collection of my writing. Currently it is writing from English courses I took while a PhD student at Tufts University.
+
 {% assign sorted_events = site.writing | sort: 'date' %}
 {% assign sorted_events = sorted_events | reverse %}
 <div class="blog">
 <ul class="spaced-list">
   {% for post in sorted_events%}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }} ({{post.date | date: "%Y-%m-%d"}})</a></h2>
+      <h2><a href="{{ post.url }}"><span style="color: #785734">({{ post.date | date: "%Y" }})</span> {{ post.title }}</a></h2>
+
     </li>
   {% endfor %}
 </ul>

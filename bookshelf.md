@@ -5,7 +5,7 @@ title: Bookshelf
 
 <h1>Latest Reads</h1>
 
-Books I have read loosely ordered from most recent. 
+I am shifting my book shelves away from goodreads. So far I just have books I have read, but I've highlighted my favorites and some I think are must reads. Hopefully I will add some reviews and longer form commentary in the future.
 
 Favorites in **bold**, must reads in <span style="color: Green;">**green**</span>.
 
@@ -79,7 +79,8 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li><strong>The Making of Prince of Persia: Journals 1985-1993</strong> by Jordan Mechner</li>
   <li><strong>The Art of Doing Science and Engineering: Learning to Learn</strong> by Richard Hamming</li>
   <li><strong>The Art of Action: How Leaders Close the Gaps between Plans, Actions and Results</strong> by Stephen Bungay</li>
-  <li>Sweet Thursday by John Steinbeck - (IMO, skip this one)</li>
+  <li>Sweet Thursday by John Steinbeck</li>
+  <blockquote>IMO, skip this one. The magic of Cannery Row is not continued.</blockquote>
   <li>The House of the Spirits by Isabel Allende</li>
   <li>The 7 Habits of Highly Effective People by Stephen R. Covey</li>
   <li>A World Without Email: Reimagining Work in an Age of Communication Overload by Cal Newport</li>
@@ -126,7 +127,7 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li><strong>Runaway Horses</strong> by Yukio Mishima</li>
   <li><strong>The Secret Life of the Forest</strong> by Richard M. Ketchum</li>
   <li><strong>Indiscrete Thoughts</strong> by Gian-Carlo Rota</li>
-  <li><strong>Time Regained</strong> by Marcel Proust</li>
+  <li><strong><span style="color: Green;">Time Regained</span></strong> by Marcel Proust</li>
   <li><strong>Paintings in Proust: A Visual Companion to 'In Search of Lost Time'</strong> by Eric Karpeles</li>
   <li>Sun & Steel by Yukio Mishima</li>
   <li><strong>Spring Snow</strong> by Yukio Mishima</li>
@@ -144,7 +145,8 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li><strong>Who Goes There?</strong> by John W. Campbell Jr.</li>
   <li>Young Adults by Daniel Pinkwater</li>
   <li><strong><span style="color: Green;">Frankenstein: The 1818 Text</span></strong> by Mary Wollstonecraft Shelley</li>
-  <li><strong>The Guermantes Way</strong> by Marcel Proust - (this is the toughest one to get through since there are <i>hundreds</i> of pages from the same dinner party)</li>
+  <li><strong>The Guermantes Way</strong> by Marcel Proust</li>
+  <blockquote>This is the toughest one to get through since there are <i>hundreds</i> of pages from the same dinner party. The banter is fun though!</blockquote>
   <li>The Call of Cthulhu by H.P. Lovecraft</li>
   <li>The Color Out of Space by H.P. Lovecraft</li>
   <li><strong>At the Mountains of Madness</strong> by H.P. Lovecraft</li>
@@ -195,7 +197,7 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li><strong>Walden</strong> by Henry David Thoreau</li>
   <li>Zen in the Art of Archery by Eugen Herrigel</li>
   <li>Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values by Robert M. Pirsig</li>
-  <li><strong>Gödel, Escher, Bach: An Eternal Golden Braid</strong> by Douglas R. Hofstadter</li>
+  <li><strong>Gödel, Escher, Bach: An Eternal Golden Braid</strong> by Douglas R. Hofstadter</li><blockquote>If you know first order logic, you can read only the dialogues of the first half since it's just a primer on it.</blockquote>
   <li>The Time of Contempt by Andrzej Sapkowski</li>
   <li>Blood of Elves by Andrzej Sapkowski</li>
   <li>Sword of Destiny by Andrzej Sapkowski</li>
@@ -209,7 +211,7 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li>The Handmaid’s Tale by Margaret Atwood</li>
   <li><strong><span style="color: Green;">Why?</span></strong> by Adam Rex</li>
   <li>The Poisonwood Bible by Barbara Kingsolver</li>
-  <li><strong><span style="color: Green;">Moby-Dick or, The Whale</span></strong> by Herman Melville</li>
+  <li><strong><span style="color: Green;">Moby-Dick or, The Whale</span></strong> by Herman Melville</li><blockquote><i>"naught's an angle to the iron way"</i></blockquote>
   <li>The Grand Design by Stephen Hawking</li>
   <li>The Visible Unseen by Andrea Chapela</li>
   <li>Picnic by William Inge</li>

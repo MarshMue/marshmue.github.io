@@ -11,7 +11,7 @@ layout: default
 </div>
 I am Math PhD looking for research opportunities in mechanistic interpretability of neural networks. 
 
-I received my PhD from Tufts University advised by [James M. Murphy](https://jmurphy.math.tufts.edu/) and [Abiy Tasissa](https://abiy-tasissa.github.io/index.html). My dissertation is entitled *Local Sparse Representations: Connections With the Delaunay Triangulation and Dictionary Learning in Wasserstein Space*. Before that I graduated from the University of Wisconsin-Madison with a double major in math and computer sciences; I was fortunate to have advising from [Sigurd Angenent](https://people.math.wisc.edu/~angenent/) and [Dave Anderson](https://people.math.wisc.edu/~dfanderson/). 
+I received my PhD from Tufts University advised by [James M. Murphy](https://jmurphy.math.tufts.edu/) and [Abiy Tasissa](https://abiy-tasissa.github.io/index.html). My dissertation is entitled *Local Sparse Representations: Connections With the Delaunay Triangulation and Dictionary Learning in Wasserstein Space*. Before that I graduated from the University of Wisconsin-Madison with a double major in math and computer sciences. I was fortunate to have advising from [Sigurd Angenent](https://people.math.wisc.edu/~angenent/) and [Dave Anderson](https://people.math.wisc.edu/~dfanderson/). 
 
 
 &nbsp;
@@ -23,7 +23,7 @@ I received my PhD from Tufts University advised by [James M. Murphy](https://jmu
 
 ---
 
-## Latest Blog Post:
+## Latest Writing:
 {% assign latest_post = site.writing | last %}
 <div class="blog">
 <ul class="spaced-list">
@@ -32,6 +32,7 @@ I received my PhD from Tufts University advised by [James M. Murphy](https://jmu
     </li>
 </ul>
 </div>
+ 
 
 ---
 &nbsp;
@@ -40,9 +41,5 @@ I received my PhD from Tufts University advised by [James M. Murphy](https://jmu
 &nbsp;
 &nbsp;
 
-
-### Miscellanea
-
-I am shifting my book shelves away from goodreads. So far I just have books I have read, but I've highlighted my favorites and some I think are must reads. Hopefully I will add some reviews and longer form commentary in the future. 
 
 Website design inspired by the delightfully simple aesthetic of [Shoji](https://en.wikipedia.org/wiki/Shoji).
