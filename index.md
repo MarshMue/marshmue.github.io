@@ -21,6 +21,8 @@ I received my PhD from Tufts University advised by [James M. Murphy](https://jmu
 
 [Google Scholar](https://scholar.google.com/citations?user=yH_Kz7IAAAAJ&hl=en)
 
+[Github](https://github.com/MarshMue)
+
 ---
 
 ## Latest Writing:
