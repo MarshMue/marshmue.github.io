@@ -10,6 +10,10 @@ p {
 line-height: 1.7;
 }
 
+li {
+    line-height: 1.7;
+}
+
 @font-face {
     font-family: 'Wix Madefor Text';
     src: url('/static/WixMadeforText-VariableFont_wght.ttf') format('truetype');
@@ -54,7 +58,7 @@ html {
   /* Center the Name in the Header */
   header {
     font-family: "Wix Madefor Text";
-    background-color: var(--border-lines); /* Traditional Japanese shrine red */
+    background-color: var(--border-lines);
     text-align: center;
     padding: 5px 0; /* Reduce padding for a slimmer top bar */
     height: var(--header-height); /* Set a fixed height if needed */
