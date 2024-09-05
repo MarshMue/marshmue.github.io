@@ -24,7 +24,7 @@ layout: default
 ---
 
 
-With my Math PhD recently finished, I am looking for research opportunities in interpretability of AI systems. In particular, I am looking to understand AI [mechanistically](https://distill.pub/2020/circuits/zoom-in/) with the goal of uncovering the algorithms learned by models like ChatGPT, Claude, or Gemini. 
+With my Math PhD recently finished, I am looking for professional opportunities to help organizations with quantitative problems. I particularly enjoy working on problems that help to reduce waste in systems. This can be done, for example, by finding patterns in data that can be exploited, or a better framing of the problem into a mathematical objective that can be optimized by state-of-the-art algorithms. This style of work has been historically categorized under "operations research", and nowadays under "data science", "quantitative analyst/researcher", and even "machine learning engineer/researcher" among many others. If your organization is hiring for these areas, please reach out to marshallm (at) protonmail (dot) ch.
 
 At Tufts University I was advised by [James M. Murphy](https://jmurphy.math.tufts.edu/) and [Abiy Tasissa](https://abiy-tasissa.github.io/index.html). My dissertation is entitled *Local Sparse Representations: Connections With the Delaunay Triangulation and Dictionary Learning in Wasserstein Space*. 
 
