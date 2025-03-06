@@ -333,3 +333,43 @@ html {
   .blog ul a {
     color:var(--main-text);
   }
+
+  .film-list li h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .film-list li h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .film-list p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* Control spacing between list items if needed */
+  .film-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  td, th {
+    border: 1px solid #e2d3c0;
+    padding: 8px;
+  }
+
+  td a {
+    color: #302315;
+  }
+  
+  tr:nth-child(even){background-color: #fcefe2;}
+
+  
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #41301d;
+    color: white;
+  }

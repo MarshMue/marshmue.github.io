@@ -5,7 +5,6 @@ title: Writing
 
 <h1>Writing</h1>
 
-This is a collection of my writing. Currently it is writing from English courses I took while a PhD student at Tufts University.
 
 {% assign sorted_events = site.writing | sort: 'date' %}
 {% assign sorted_events = sorted_events | reverse %}

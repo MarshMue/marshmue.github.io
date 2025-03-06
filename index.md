@@ -23,14 +23,11 @@ layout: default
 
 ---
 
-
-With my Math PhD recently finished, I am looking for professional opportunities to help organizations with quantitative problems. I particularly enjoy working on problems that help to reduce waste in systems. This can be done, for example, by finding patterns in data that can be exploited, or a better framing of the problem into a mathematical objective that can be optimized by state-of-the-art algorithms. This style of work has been historically categorized under "operations research", and nowadays under "data science", "quantitative analyst/researcher", and even "machine learning engineer/researcher" among many others. If your organization is hiring for these areas, please reach out to marshallm (at) protonmail (dot) ch.
-
-At Tufts University I was advised by [James M. Murphy](https://jmurphy.math.tufts.edu/) and [Abiy Tasissa](https://abiy-tasissa.github.io/index.html). My dissertation is entitled *Local Sparse Representations: Connections With the Delaunay Triangulation and Dictionary Learning in Wasserstein Space*. 
-
 I like to [read](bookshelf), [write](writing), take [photos](photography), watch [movies](https://letterboxd.com/mashygpig/), and practice Kyudo. 
 
-In the past I attended the University of Wisconsin-Madison with a double major in math and computer sciences (yes science**s**). I was fortunate to have advising from [Sigurd Angenent](https://people.math.wisc.edu/~angenent/) and [Dave Anderson](https://people.math.wisc.edu/~dfanderson/). 
+Taking english classes were some of my favorite experiences during my PhD. I organize a [film club](/filmclub) for my friends to provide a space for similar levels of discussion around movies.  
+
+For the first few months of 2022 I journaled publicly; find it archived it [here](/posts).
 
 &nbsp;
 &nbsp;
