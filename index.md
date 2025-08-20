@@ -3,10 +3,10 @@ title: Home
 layout: default
 ---
 
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
-  <h1 style="margin: 0; font-size: 2em; flex-grow: 1;">Hi, I'm Marshall!</h1>
+<div class="flex-center mb-20">
+  <h1 class="m-0 text-2xl flex-grow">Hi, I'm Marshall!</h1>
   <div class="framed-image">
-    <img src="assets/dr_piel.jpeg" alt="Me as a fresh PhD" style="width: 200px; height: auto;">
+    <img src="assets/dr_piel.jpeg" alt="Me as a fresh PhD" class="profile-image">
   </div>
 </div>
 

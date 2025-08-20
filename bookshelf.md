@@ -7,7 +7,7 @@ title: Bookshelf
 
 I am shifting my book shelves away from goodreads. So far I just have books I have read, but I've highlighted my favorites and some I think are must reads. Hopefully I will add some reviews and longer form commentary in the future.
 
-Favorites in **bold**, must reads in <span style="color: Green;">**green**</span>.
+Favorites in **bold**, must reads in <span class="text-green">**green**</span>.
 
 
 
@@ -74,7 +74,7 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li>Scientific Freedom by Donald W. Braben</li>
   <li>Stubborn Attachments: A Vision for a Society of Free, Prosperous, and Responsible Individuals by Tyler Cowen</li>
   <li>Get Together: How to build a community with your people by Bailey Richardson</li>
-  <li><span style="color: Green;"><strong>The Dream Machine: J.C.R. Licklider and the Revolution That Made Computing Personal</strong></span> by M. Mitchell Waldrop</li>
+  <li><span class="text-green"><strong>The Dream Machine: J.C.R. Licklider and the Revolution That Made Computing Personal</strong></span> by M. Mitchell Waldrop</li>
   <li>The War of Art: Winning the Inner Creative Battle by Steven Pressfield</li>
   <li><strong>The Making of Prince of Persia: Journals 1985-1993</strong> by Jordan Mechner</li>
   <li><strong>The Art of Doing Science and Engineering: Learning to Learn</strong> by Richard Hamming</li>
@@ -127,7 +127,7 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li><strong>Runaway Horses</strong> by Yukio Mishima</li>
   <li><strong>The Secret Life of the Forest</strong> by Richard M. Ketchum</li>
   <li><strong>Indiscrete Thoughts</strong> by Gian-Carlo Rota</li>
-  <li><strong><span style="color: Green;">Time Regained</span></strong> by Marcel Proust</li>
+  <li><strong><span class="text-green">Time Regained</span></strong> by Marcel Proust</li>
   <li><strong>Paintings in Proust: A Visual Companion to 'In Search of Lost Time'</strong> by Eric Karpeles</li>
   <li>Sun & Steel by Yukio Mishima</li>
   <li><strong>Spring Snow</strong> by Yukio Mishima</li>
@@ -144,7 +144,7 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li><strong>Daily Rituals: How Artists Work</strong> by Mason Currey</li>
   <li><strong>Who Goes There?</strong> by John W. Campbell Jr.</li>
   <li>Young Adults by Daniel Pinkwater</li>
-  <li><strong><span style="color: Green;">Frankenstein: The 1818 Text</span></strong> by Mary Wollstonecraft Shelley</li>
+  <li><strong><span class="text-green">Frankenstein: The 1818 Text</span></strong> by Mary Wollstonecraft Shelley</li>
   <li><strong>The Guermantes Way</strong> by Marcel Proust</li>
   <blockquote>This is the toughest one to get through since there are <i>hundreds</i> of pages from the same dinner party. The banter is fun though!</blockquote>
   <li>The Call of Cthulhu by H.P. Lovecraft</li>
@@ -158,7 +158,7 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li>Lyra's Oxford by Philip Pullman</li>
   <li><strong>The Log from the Sea of Cortez</strong> by John Steinbeck</li>
   <li><strong>My First Summer in the Sierra</strong> by John Muir</li>
-  <li><strong><span style="color: Green;">Cannery Row</span></strong> by John Steinbeck</li>
+  <li><strong><span class="text-green">Cannery Row</span></strong> by John Steinbeck</li>
   <li>The Wonderful Wizard of Oz by L. Frank Baum</li>
   <li><strong>The Wandering Earth: Classic Science Fiction Collection</strong> by Cixin Liu</li>
   <li>The Story of the Treasure Seekers by E. Nesbit</li>
@@ -209,9 +209,9 @@ Favorites in **bold**, must reads in <span style="color: Green;">**green**</span
   <li>Harry Potter and the Half-Blood Prince by J.K. Rowling</li>
   <li>Harry Potter and the Order of the Phoenix by J.K. Rowling</li>
   <li>The Handmaid’s Tale by Margaret Atwood</li>
-  <li><strong><span style="color: Green;">Why?</span></strong> by Adam Rex</li>
+  <li><strong><span class="text-green">Why?</span></strong> by Adam Rex</li>
   <li>The Poisonwood Bible by Barbara Kingsolver</li>
-  <li><strong><span style="color: Green;">Moby-Dick or, The Whale</span></strong> by Herman Melville</li><blockquote><i>"naught's an angle to the iron way"</i></blockquote>
+  <li><strong><span class="text-green">Moby-Dick or, The Whale</span></strong> by Herman Melville</li><blockquote><i>"naught's an angle to the iron way"</i></blockquote>
   <li>The Grand Design by Stephen Hawking</li>
   <li>The Visible Unseen by Andrea Chapela</li>
   <li>Picnic by William Inge</li>
