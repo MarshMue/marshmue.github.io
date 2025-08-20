@@ -17,12 +17,11 @@ This is a personal website built with Jekyll, hosted on GitHub Pages. The site s
   - `post.html`: Blog post layout
   - `book.html`: Book review layout  
 - **Assets**: Static files in `/assets/` and `/static/` directories
-- **JavaScript**: TensorFlow.js integration in `js/universal_approximator.js`
 
 ## Configuration
 
 - `_config.yml`: Jekyll configuration with collections setup
-- `package.json`: Only contains TensorFlow.js dependency
+- `package.json`: Empty configuration file
 - No build process - Jekyll handles compilation automatically via GitHub Pages
 
 ## Content Structure
@@ -30,7 +29,7 @@ This is a personal website built with Jekyll, hosted on GitHub Pages. The site s
 - Main pages: `index.md`, `writing.md`, `bookshelf.md`, `photography.md`, `filmclub.md`, `posts.md`
 - Writing pieces stored in `_writing/` collection
 - Photos stored in `assets/photos/`
-- Styling in `static/style.css` and `static/uapprox_style.css`
+- Styling in `static/style.css`
 
 ## Development Commands
 
@@ -70,6 +69,5 @@ bundle outdated           # Check which gems have newer versions
 
 - PostHog analytics integration in default layout
 - Custom CSS with Shoji-inspired design aesthetic
-- Mathematical content support via TensorFlow.js
 - Responsive design with vertical line elements
 - Collections-based content organization
