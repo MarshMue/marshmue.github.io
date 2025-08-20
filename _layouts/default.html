@@ -11,6 +11,123 @@
         posthog.init('phc_KacUPwgiDGKQ4gIshiTHnxWpY4Nd1XtTLB7QE2PqChA',{api_host:'https://us.i.posthog.com', person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
             })
     </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Convert Jekyll footnotes to hover tooltips
+            function convertJekyllFootnotes() {
+                const footnoteLinks = document.querySelectorAll('a[href^="#fn:"]');
+                const footnoteDefinitions = document.querySelectorAll('.footnotes li');
+                
+                footnoteLinks.forEach(function(link) {
+                    // Extract footnote ID
+                    const footnoteId = link.getAttribute('href').replace('#fn:', '');
+                    
+                    // Find corresponding footnote definition
+                    const definition = document.getElementById('fn:' + footnoteId);
+                    if (definition) {
+                        // Get footnote text (remove the return link)
+                        const footnoteText = definition.innerHTML.replace(/<a[^>]*>.*?<\/a>/g, '').trim();
+                        
+                        // Create tooltip element
+                        const tooltip = document.createElement('span');
+                        tooltip.className = 'footnote-content';
+                        tooltip.innerHTML = footnoteText;
+                        
+                        // Add tooltip to link
+                        link.appendChild(tooltip);
+                        link.className = 'footnote';
+                        
+                        // Prevent default link behavior
+                        link.addEventListener('click', function(e) {
+                            e.preventDefault();
+                        });
+                    }
+                });
+            }
+            
+            // Convert Jekyll footnotes first
+            convertJekyllFootnotes();
+            
+            // Then set up hover functionality
+            const footnotes = document.querySelectorAll('.footnote');
+            
+            footnotes.forEach(function(footnote) {
+                const content = footnote.querySelector('.footnote-content');
+                if (!content) return;
+                
+                footnote.addEventListener('mouseenter', function() {
+                    // Get footnote trigger position
+                    const triggerRect = footnote.getBoundingClientRect();
+                    const windowWidth = window.innerWidth;
+                    const windowHeight = window.innerHeight;
+                    
+                    // Position footnote above the trigger
+                    let top = triggerRect.top - 10; // 10px gap above trigger
+                    let left = triggerRect.left + (triggerRect.width / 2);
+                    
+                    // Set initial position
+                    content.style.top = top + 'px';
+                    content.style.left = left + 'px';
+                    content.style.transform = 'translate(-50%, -100%)';
+                    
+                    // Show temporarily to measure
+                    content.style.opacity = '1';
+                    content.style.visibility = 'visible';
+                    
+                    const contentRect = content.getBoundingClientRect();
+                    
+                    // Adjust horizontal position if off screen
+                    if (contentRect.left < 10) {
+                        content.style.transform = 'translate(0, -100%)';
+                        content.style.left = '10px';
+                    } else if (contentRect.right > windowWidth - 10) {
+                        content.style.transform = 'translate(-100%, -100%)';
+                        content.style.left = (windowWidth - 10) + 'px';
+                    }
+                    
+                    // If footnote would go above viewport, show it below instead
+                    if (contentRect.top < 10) {
+                        const newTop = triggerRect.bottom + 10;
+                        content.style.top = newTop + 'px';
+                        content.style.transform = content.style.transform.replace('-100%)', '0)');
+                        content.classList.add('below');
+                    } else {
+                        content.classList.remove('below');
+                    }
+                    
+                    // Hide again for smooth transition
+                    content.style.opacity = '0';
+                    content.style.visibility = 'hidden';
+                    
+                    // Show with transition
+                    setTimeout(() => {
+                        content.style.opacity = '1';
+                        content.style.visibility = 'visible';
+                    }, 10);
+                });
+                
+                footnote.addEventListener('mouseleave', function() {
+                    content.style.opacity = '0';
+                    content.style.visibility = 'hidden';
+                });
+            });
+        });
+        
+        // Initialize KaTeX auto-render when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                macros: window.katexMacros || {},
+                throwOnError: false
+            });
+        });
+    </script>
 </head>
 
 <body>

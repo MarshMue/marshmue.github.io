@@ -4,3 +4,5 @@ collections:
     output: true
   bookshelf:
     output: true
+  image_and_sound:
+    output: true

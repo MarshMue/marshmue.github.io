@@ -459,3 +459,171 @@ html {
     background-color: #41301d;
     color: white;
   }
+
+  /* Hover Footnotes */
+  .footnote {
+    position: relative;
+    cursor: help;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: #785734;
+    margin-left: 2px;
+    margin-right: 4px;
+  }
+
+  .footnote sup {
+    font-size: 0.75em;
+    padding: 1px 3px;
+    border-radius: 3px;
+    background-color: rgba(120, 87, 52, 0.1);
+  }
+
+  .footnote-content {
+    position: fixed;
+    background-color: #fffdf9;
+    border: 2px solid var(--border-lines);
+    border-radius: 8px;
+    padding: 12px 16px;
+    max-width: 300px;
+    width: max-content;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--main-text);
+    font-weight: normal;
+    pointer-events: none;
+  }
+
+  .footnote:hover .footnote-content {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .footnote-content::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--border-lines);
+  }
+
+  .footnote-content.below::after {
+    top: -12px;
+    border-top-color: transparent;
+    border-bottom-color: var(--border-lines);
+  }
+
+  /* Make footnote superscript not bold in headers */
+  h1 .footnote sup,
+  h2 .footnote sup,
+  h3 .footnote sup,
+  h4 .footnote sup,
+  h5 .footnote sup,
+  h6 .footnote sup {
+    font-weight: normal;
+  }
+
+  /* Jekyll footnote styling */
+  a[href^="#fn:"] {
+    position: relative;
+    cursor: help;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: #785734;
+    margin-left: 2px;
+    margin-right: 4px;
+  }
+
+  a[href^="#fn:"] sup {
+    font-size: 0.75em;
+    padding: 1px 3px;
+    border-radius: 3px;
+    background-color: rgba(120, 87, 52, 0.1);
+  }
+
+  /* Hide footnote definitions at bottom */
+  .footnotes {
+    display: none;
+  }
+
+  /* Auto-numbering across sections */
+  #content {
+    counter-reset: chapter-counter appendix-counter;
+  }
+
+  /* Target ordered lists that come after h3 headers */
+  h3 + ol {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  h3 + ol li {
+    counter-increment: chapter-counter;
+    position: relative;
+    padding-left: 2em;
+  }
+
+  h3 + ol li::before {
+    content: counter(chapter-counter) ". ";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: var(--main-text);
+  }
+
+  /* Handle nested lists under h3 */
+  h3 ~ ol {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  h3 ~ ol li {
+    counter-increment: chapter-counter;
+    position: relative;
+    padding-left: 2em;
+  }
+
+  h3 ~ ol li::before {
+    content: counter(chapter-counter) ". ";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: var(--main-text);
+  }
+
+  /* Special handling for Appendix section */
+  .appendix + ol {
+    counter-reset: appendix-counter;
+  }
+
+  .appendix + ol li {
+    counter-increment: appendix-counter;
+  }
+
+  .appendix + ol li::before {
+    content: "A" counter(appendix-counter) ". ";
+  }
+
+  .appendix ~ ol li {
+    counter-increment: appendix-counter;
+  }
+
+  .appendix ~ ol li::before {
+    content: "A" counter(appendix-counter) ". ";
+  }
+
+  /* Responsive footnotes for mobile */
+  @media (max-width: 768px) {
+    .footnote-content {
+      max-width: 250px;
+      font-size: 13px;
+      padding: 10px 14px;
+    }
+  }
